@@ -122,6 +122,12 @@ class TestCalculadora(unittest.TestCase):
         # Teste números negativos com exponenciação, testar para todas as versões
         self.assertEqual(calculadora(-2, 3, '^'), -8)
 
+        self.assertEqual(calculadora_v2(-2, 3, '^'), -8)
+
+        self.assertEqual(calculadora_v3(-2, 3, '^'), -8)
+
+        self.assertEqual(calculadora_v4(-2, 3, '^'), -8)
+
         # Teste números negativos com exponenciação de zero, testar para todas as versões
         self.assertEqual(calculadora(0, 3, '^'), 0)
 
